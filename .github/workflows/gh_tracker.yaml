@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
-      - name: Track Repo and Send to ELK
+      - name: Install Python Packages
         run: |
-          pwd
-          ls -la
-
+          python -m venv venv
+          pip install -r requirements.txt
