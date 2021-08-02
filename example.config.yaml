@@ -1,0 +1,14 @@
+github:
+  # create new token at https://github.com/settings/tokens
+  token: "<github token>"
+  # github user for the token
+  user: "<github user>"
+  # github org that the user belongs to
+  org: "<github organization>"
+  # github repos per page (default 20, top 100)
+  per_page: 100
+elastic:
+  # elastic server url ie: https://elastic.example.com
+  url: "<elastic server url>"
+  # elastic server auth base64 of the "user:pass" string
+  auth: "base64 auth string"
