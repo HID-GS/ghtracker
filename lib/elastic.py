@@ -10,6 +10,6 @@ def send(config, data):
             'Content-Length': str(len(json.dumps(data))),
             'Authorization': 'Basic ' + config['elastic']['auth']
             }
-    url = config['elastic']['url'] + '/ghtracker-' + data['name'] + '/_doc'
+    url = config['elastic']['url'] + '/ghtracker-' + data['name'].lower() + '/_doc'
     return requests.post(url, headers=headers, json=data)
 
