@@ -17,6 +17,8 @@ jobs:
           . venv/bin/activate
           pip install -r requirements.txt
       - name: Run GitHub Tracker
+        env:
+          GHCONFIG: ${{ secrets.GHCONFIG }}
         run: |
           . venv/bin/activate
           python main.py
