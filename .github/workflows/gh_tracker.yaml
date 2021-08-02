@@ -1,6 +1,7 @@
 name: GitHub Repo Tracker on ELK
 
 on:
+  push:
   schedule:
     - cron: '4 3 * * *'
 
