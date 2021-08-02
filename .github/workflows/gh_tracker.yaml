@@ -1,0 +1,16 @@
+name: GitHub Repo Tracker on ELK
+
+on:
+  schedule:
+    - cron: '4 3 * * *'
+
+jobs:
+  github-repo-tracker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Track Repo and Send to ELK
+        run: |
+          pwd
+
